@@ -1,22 +1,25 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const badge = 'https://assets.holopin.io/hf2023levels/level0-gold-0-0-0.webp'
+
   return (
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={badge} className="badge" alt="Vite logo" />
         </a>
+      </div>
+      <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Site Hacktober Fest 2023</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
