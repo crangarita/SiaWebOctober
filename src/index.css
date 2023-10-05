@@ -1,69 +1,134 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: black;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+form {
+  background-color: white;
+  padding: 2rem;
+  width: 500px;
+  margin: 0 auto; /* Centrar el formulario */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+input, select, textarea {
+  border-radius: 8px; /* Reducir el radio del borde */
+  border: 1px solid #ccc; /* Agregar un borde suave */
+  background-color: #f2f2f2;
+  padding: .8rem;
+  width: 100%;
+  box-sizing: border-box; /* Asegurar que el tamaño incluya el relleno y el borde */
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"] {
+  width: auto;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: 0;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  padding: 0.8rem 1.2rem; /* Ajustar el relleno */
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: .3s ease-in-out;
+  display: inline-block; /* Evitar saltos de línea */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  background-color: #1e90ff; /* Ajustar el color al pasar el ratón */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-1 {
+  gap: 8px;
+}
+
+.gap-2 {
+  gap: 16px;
+}
+
+.bg-light {
+  background-color: #f2f2f2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: white;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+pre {
+  color: white;
 }
