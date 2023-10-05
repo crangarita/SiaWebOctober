@@ -4,10 +4,10 @@ export default function Header() {
     return(
         <header className="w-full">
             <nav className="w-9/12 mx-auto flex items-center justify-between">
-                <h1 className="text-white">Resxurces.</h1>
+                <h1 className="text-white">Badges SIAWEB</h1>
                 <ul className="flex gap-2">
                     <li className="">
-                        <Link className="text-white" to="principal">Badge</Link>
+                        <Link className="text-white" to="principal">Perfil</Link>
                     </li>
                     <li className="">
                         <Link className="text-white" to="">Principios SOLID</Link>
